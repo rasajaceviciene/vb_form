@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: $fontWeightRegular;
+    color: $colorDarkGrey;
+    h2{
+        text-align: center;
+        font-size: $fontSize1;
+    }
+    p{
+        font-size: $fontSize3;
+    }
+    a{
+        text-decoration: none;  
+    }
+    img{
+        max-width: 100%;
+    }
+}

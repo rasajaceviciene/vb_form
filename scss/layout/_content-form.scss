@@ -1,0 +1,87 @@
+.main-content{
+    height: 100%;
+    background-color: $bckColorImg;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    .form-content{
+        height: 100%;
+        padding: 70px 40px 40px 40px;
+        background-color: $bckColorForm;
+        @media screen and (min-width:1400px){         
+            padding: 125px 120px 40px 120px;           
+        }
+        @media screen and (min-width:992px){
+            border-radius: 35px;           
+        }
+        .form-row{
+            margin-left: 0;
+            margin-right: 0;
+            .form-title{            
+                & h2{
+                    margin-bottom: 10px;
+                    font-weight: $fontWeightSemiBold;
+                    color: $colorBlack;
+                }            
+            }
+            form{
+                padding-left: 0;
+                padding-right: 0;
+                .form-item{
+                    display:flex;
+                    flex-direction: column;
+                    p{                    
+                        & a{
+                            color: $colorLightYellow;
+                        }
+                    }
+                    .form-label{
+                        margin-top: 44px;
+                        margin-bottom: 0;
+                        font-weight: $fontWeightMediumd;
+                        font-size: $fontSize2;
+                        color: $colorBlack50;                    
+                    }
+                    .form-input{
+                        padding: 17px 40px;
+                        font-size: $fontSize2;     
+                        background-color: $bckColorFormInput;
+                        border: 1px solid $bckColorFormInput;
+                        border-radius: 20px;
+                    }
+                }            
+                .form-button{
+                    & .btn-primary{               
+                        @include create-account-button(35px,15px)           
+                    }
+                }
+                .login-providers-title{
+                    margin-top: 32px;
+                    margin-bottom: 14px;
+                    & h2{
+                        color: $colorGrey;
+                    }
+                }                
+                .login-providers{
+                    display: flex;
+                    justify-content: space-around;
+                    .login-button{
+                        @include login-button;                       
+                        @media screen and (max-width: 1400px){
+                            @include login-button;
+                            border: none;
+                            .login-button-title{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .form-footer p{
+                    margin-top: 80px;
+                    margin-bottom: 0;
+                    text-align: center;
+                    font-size: $fontSize3;                   
+                }
+            }
+        }                     
+    }    
+}

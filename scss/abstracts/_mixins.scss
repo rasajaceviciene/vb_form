@@ -1,0 +1,18 @@
+@mixin create-account-button($margin-top,$margin-bottom){        
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    padding: 10px 0; 
+    font-weight: $fontWeightMediumd;
+    font-size: $fontSize1;  
+    color: $colorBlack;
+    background-color: $bckColorButton;
+    border-color: $bckColorButton;
+    border-radius: 10px; 
+}
+@mixin login-button{
+    padding: 7px 12px;
+    font-size: $fontSize4;
+    color: $colorDarkGrey;
+    border: 1px solid $colorBlack;
+    border-radius: 15px;    
+}

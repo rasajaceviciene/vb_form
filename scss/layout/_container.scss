@@ -1,0 +1,22 @@
+.main-container{
+    background-color: $bckColorContainer;
+    padding: 50px 0;
+    .container{       
+        margin: 0 auto;
+        padding: 0;
+        @media screen and (min-width:992px){
+            max-width: 85%;
+        }     
+        .main-row{          
+            margin: 0;
+            background-color: $bckColorContainer;
+            flex-direction: column-reverse;
+            @media screen and (min-width:992px){
+                flex-direction: row;              
+            }
+            .block{
+                padding: 0;                
+            }
+        }  
+    }
+}
